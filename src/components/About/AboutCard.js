@@ -33,8 +33,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Karan Joshi </span>
             from <span className="purple"> Delhi, India.</span>
-            <br /> I am pursuing Bachelors in Computer Applications
-            and currently enrolled in a Full Stack Web Development bootcamp from Microverse
+            <br /> I am in currently enrolled in a Full Stack Web Development bootcamp from Microverse
             <br />
             Additionally, I am a self-taught programmer and I love to build
             <br />
