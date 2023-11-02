@@ -1,68 +1,83 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
   SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
   SiPostgresql,
+  SiRedux,
+  SiRuby,
+  SiRubyonrails,
+  SiHtml5,
+  SiCss3,
+  SiJquery,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
+  const techStackStyle = {
+    fontSize: "14px", // Adjust the font size as needed
+    textAlign: "center",
+    marginTop: "5px", // Adjust the spacing as needed
+  };
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiHtml5 /> {/* HTML icon */}
+        <div style={techStackStyle}>HTML</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiCss3 /> {/* CSS icon */}
+        <div style={techStackStyle}>CSS</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <SiRuby /> {/* Ruby icon */}
+        <div style={techStackStyle}>Ruby</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <SiRubyonrails /> {/* Ruby on Rails icon */}
+        <div style={techStackStyle}>Ruby on Rails</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiJavascript1 /> {/* JavaScript icon */}
+        <div style={techStackStyle}>JavaScript</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <DiNodejs /> {/* Node.js icon */}
+        <div style={techStackStyle}>Node.js</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <DiReact /> {/* React icon */}
+        <div style={techStackStyle}>React</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <DiMongodb /> {/* MongoDB icon */}
+        <div style={techStackStyle}>MongoDB</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <DiGit /> {/* Git icon */}
+        <div style={techStackStyle}>Git</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiFirebase /> {/* Firebase icon */}
+        <div style={techStackStyle}>Firebase</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiPostgresql /> {/* PostgreSQL icon */}
+        <div style={techStackStyle}>PostgreSQL</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiRedux /> {/* Redux icon */}
+        <div style={techStackStyle}>Redux</div> {/* Tech stack name */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiJquery /> {/* jQuery icon */}
+        <div style={techStackStyle}>jQuery</div> {/* Tech stack name */}
       </Col>
     </Row>
   );
