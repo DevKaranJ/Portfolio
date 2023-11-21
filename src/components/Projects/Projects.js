@@ -5,6 +5,10 @@ import Particle from "../Particle";
 import portfolioDesing from "../../Assets/Projects/Portfolio Desing1.png"
 import landingPage from "../../Assets/Projects/landingPage.png"
 import musicFestival from "../../Assets/Projects/musicFestival.png"
+import awesomeBooks from "../../Assets/Projects/awesomeBooks.png"
+import toDoList from "../../Assets/Projects/toDoList.png"
+import mathmagicians from "../../Assets/Projects/math-magicians.png"
+import Leaderboard from "../../Assets/Projects/Leaderboard.png"
 
 function Projects() {
   return (
@@ -52,6 +56,51 @@ function Projects() {
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={awesomeBooks}
+              isBlog={false}
+              title="Awesome Books"
+              description="Awesome-Books is a user-friendly website powered by JavaScript ES6, designed for book enthusiasts to easily manage their collections. With a clean and intuitive interface, you can add, remove, and edit book details effortlessly. The site offers real-time updates, data persistence, and a responsive design, ensuring your library is always at your fingertips. "
+              ghLink="https://github.com/DevKaranJ/AwesomeBooks-ES6"
+              demoLink="https://devkaranj.github.io/AwesomeBooks-ES6/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={toDoList}
+              isBlog={false}
+              title="Todo List"
+              description="Experience seamless task management with our To-Do list project. Add your daily tasks to the list and effortlessly remove them when completed. Enjoy the convenience of modern features like dynamic rendering, easy styling, and organized structure. Stay productive and in control of your tasks with this user-friendly web-based solution. "
+              ghLink="https://github.com/DevKaranJ/ToDo-list"
+              demoLink="https://todo-list-t5r6.onrender.com"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mathmagicians}
+              isBlog={false}
+              title="Math Magicians"
+              description="Math Magicians is an educational web application built using React, designed for math enthusiasts. It features a versatile calculator for basic math operations and offers random math-related quotes for inspiration. The project provides hands-on learning in web development, divided into projects covering setup, component creation, event handling, data fetching, website structure, and testing. It aims to make math learning engaging and serves as a practical React development exercise."
+              ghLink="https://github.com/DevKaranJ/math-magicians"
+              demoLink="https://math-magicians-dnk4.onrender.com"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={
+                Leaderboard}
+              isBlog={false}
+              title="
+              Leaderboard"
+              description="The Leaderboard project is an interactive web application designed to showcase and manage leaderboards for various competitions, games, or activities. It provides users with a clear and organized view of rankings, scores, and participants. Leveraging modern web development technologies such as ES6, modular JavaScript, and Webpack, the project aims to deliver a seamless user experience with a focus on functionality and code maintainability. In subsequent phases, the project will evolve to incorporate API integration and enhanced styling."
+              ghLink="https://github.com/DevKaranJ/Leaderboard"
+              demoLink="https://leaderboard-lpwr.onrender.com/"
+            />
+          </Col>
 
         </Row>
       </Container>
