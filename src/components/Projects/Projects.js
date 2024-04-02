@@ -9,6 +9,10 @@ import awesomeBooks from "../../Assets/Projects/awesomeBooks.png"
 import toDoList from "../../Assets/Projects/toDoList.png"
 import mathmagicians from "../../Assets/Projects/math-magicians.png"
 import Leaderboard from "../../Assets/Projects/Leaderboard.png"
+import MelodyVerse from "../../Assets/Projects/MelodyVerse.png"
+import TaskTracker from "../../Assets/Projects/TaskTracker.png"
+import BudgetApp from "../../Assets/Projects/BudgetApp.png"
+import Bookify from "../../Assets/Projects/Bookify.png"
 
 function Projects() {
   return (
@@ -22,6 +26,48 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={MelodyVerse}
+              isBlog={false}
+              title="Melody Verse Posts"
+              description="It is a full stack application, utilizing Node.js, Express.js, React.js, and PostgreSQL as the database. It includes features such as user signup with validation, JWT authentication, a paginated post list screen with infinite scroll, and responsive design using Tailwind CSS. The project aims to provide a visually appealing and consistent user experience under the MelodyVerse theme. Code submission includes API endpoints for user registration and post retrieval, along with JWT token generation and validation for user authentication."
+              ghLink="https://github.com/DevKaranJ/melody_verse"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Bookify}
+              isBlog={false}
+              title="Bookify App"
+              description="It is a simple book reserve App where User Can add remove their favorite book items from different category. This App is build on Rails + React framework."
+              ghLink="https://github.com/DevKaranJ/Bookify"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BudgetApp}
+              isBlog={false}
+              title="Rail Budget app"
+              description="Rail-Budget-app: The Budget app is a mobile web application where user can manage the budget."
+              ghLink="https://github.com/DevKaranJ/Budget-app"
+              demoLink="https://budget-app-n4di.onrender.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TaskTracker}
+              isBlog={false}
+              title="React Task Tracker"
+              description="Efficiently manage team tasks with our React-powered Task Tracker web application. Seamlessly track tasks with essential properties such as title, description, start and end dates, status, assignee, and priority. Sort and filter tasks by priority, date, assignee, or status, ensuring easy organization. The responsive design ensures usability across devices. Add and delete tasks effortlessly, with companion apps available for Android and iOS. Utilizing in-memory state management for data storage, our project emphasizes good coding practices and includes error handling mechanisms. Simplify task management and boost productivity with our intuitive Task Tracker solution."
+              ghLink="https://github.com/DevKaranJ/react-task-tracker"
+              demoLink="https://github.com/DevKaranJ/react-task-tracker"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard

@@ -6,6 +6,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillMessage,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -32,9 +33,7 @@ function Home2() {
               <i>
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
-                <b className="purple">
-                  Blockchain and Web 3.0.
-                </b>
+                <b className="purple">Blockchain and Web 3.0.</b>
               </i>
               <br />
               <br />
@@ -48,7 +47,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> Express.js and Next.js</b>
               </i>
             </p>
           </Col>
@@ -105,6 +104,18 @@ function Home2() {
                   <AiFillInstagram />
                 </a>
               </li>
+
+              <li className="social-icons">
+                <a
+                  href="mailto:youremail@example.com?subject=Subject%20of%20the%20Email&cc=ccemail@example.com&bcc=bccemail@example.com&body=Body%20of%20the%20Email"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillMessage />
+                </a>
+              </li>
+              
             </ul>
           </Col>
         </Row>

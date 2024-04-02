@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -30,9 +29,9 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   const logoTextStyle = {
-    color: "#c770f0", // Set the desired color
-    fontSize: "1.5em", // Adjust the font size as needed
-    fontWeight: "bold", // Adjust font weight if desired
+    color: "#c770f0",
+    fontSize: "1.5em",
+    fontWeight: "bold",
   };
 
   return (
@@ -99,11 +98,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://medium.com/@DevKaranJ"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Contact Me
               </Nav.Link>
             </Nav.Item>
 
